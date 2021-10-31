@@ -1,0 +1,70 @@
+/* pages/myAppointment/myAppointment.wxss */
+page {
+  background-color: #fff;
+}
+
+.myAppointmentView {
+  padding-top:22rpx ;
+}
+.typeList{
+  width: 100%;
+  padding: 0 22rpx;
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.typeList .item {
+  height: 62rpx;
+  line-height: 62rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #343434;
+  border-bottom: 0rpx solid #FF5858;
+}
+
+.typeList .item.select {
+  color: #FF5958;
+  border-width: 4rpx;
+}
+
+.classItem{
+  padding: 24rpx 22rpx 0 22rpx;
+  margin-top: 10rpx;
+}
+.classItem >image{
+  width: 210rpx;
+  height: 122rpx;
+  border-radius: 8rpx;
+  margin-right: 24rpx;
+}
+.classItem .flex1{
+  flex: 1;
+}
+.classItem .cName{
+font-family: PingFang SC;
+font-weight: 500;
+color: #343434;
+margin-bottom: 12rpx;
+}
+.classItem  .head{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-right: 18rpx;
+}
+.classItem  .name{
+font-size: 26rpx;
+font-weight: 400;
+color: #7C7C7C;
+}
+.classItem  .type{
+font-size: 24rpx;
+font-weight: 400;
+color: #7C7C7C;
+height: 40rpx;
+border: 1rpx solid #DCDCDC;
+border-radius: 20rpx;
+padding: 0 22rpx;
+}

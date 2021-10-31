@@ -1,0 +1,43 @@
+<!--pages/cardDetail/cardDetail.wxml-->
+<view class="cardDetailView">
+
+	<view class="section  s1 bg-white">
+		<image class="card" src="/img/cardDetail_img1.png" mode="widthFix"></image>
+		<view class="cardInfo flex align-center justify-between">
+			<view>
+				<view class="name">年卡</view>
+				<view class="money">￥100.00</view>
+			</view>
+			<view class="time">1年</view>
+		</view>
+	</view>
+
+	<view class="section bg-white">
+		<view class="sectionTitle flex align-center justify-between">
+			<text>适用门店</text>
+		</view>
+		<view class="canuseType">适用于所有门店</view>
+	</view>
+
+	<view class="section bg-white">
+		<view class="sectionTitle flex align-center justify-between">
+			<text>激活时间</text>
+		</view>
+		<view class="canuseTime">购买后1年内</view>
+	</view>
+
+
+	<view class="section bg-white" style="padding-bottom: 33rpx;" >
+		<view class="sectionTitle flex align-center justify-between">
+			<text>使用规则</text>
+		</view>
+		<view class="rule">1.会员卡激活后立即生效。1.会员卡激活后立即生效。1.会员卡激活后立即生效。</view>
+		<view class="agreement text-center">立即购买即表示已阅读并同意《购买会员卡协议》以及 《免责声明》已知晓《适用门店》</view> 
+    <view class="flex justify-center">
+		<view class="btn cu-btn text-center">立即购买</view>
+
+    </view>
+
+	</view>
+
+</view>

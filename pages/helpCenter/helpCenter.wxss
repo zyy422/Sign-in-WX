@@ -1,0 +1,46 @@
+/* pages/helpCenter/helpCenter.wxss */
+page {
+  background-color: #ffffff;
+}
+
+.helpCenterView .menuBox {
+  padding: 50rpx 0 20rpx 0;
+}
+
+.helpCenterView .menuBox .item {
+  font-size: 30rpx;
+  color: #3F3F3F;
+}
+
+.helpCenterView .menuBox .item image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 18rpx;
+}
+
+.helpCenterView .menuBox .item .time {
+  font-size: 26rpx;
+  color: #BCBCBC;
+  margin-top: 25rpx;
+}
+
+.title {
+  line-height: 82rpx;
+  padding-left: 24rpx;
+  font-size: 30rpx;
+  color: #2E2E2E;
+  background-color: #f5f5f5;
+}
+
+.qBox .qItem {
+  line-height: 84rpx;
+  padding: 0 20rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+  font-size: 28rpx;
+  color: #343434;
+}
+
+.qBox .qItem .cuIcon-right {
+  color: #aeaeae;
+  font-size: 22rpx;
+}

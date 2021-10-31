@@ -1,0 +1,66 @@
+<wxs module="util">
+    var sub = function(val) {
+        return val.substring(0, 10)
+    }
+    module.exports.sub = sub;
+</wxs>
+
+<view class="indexView">
+
+	<view class="AD">
+		<image src="/img/index_img1.png" mode="aspectFill"  style="border-radius: 20rpx"></image>
+	</view>
+
+	<view class="menuBox flex justify-between align-center">
+		<view bindtap="navigator" data-url="{{item.path}}" wx:for="{{menuList}}" wx:key="index" class="item flex flex-direction text-center" style="align-items: center;">
+			<image src="{{item.icon}}" mode="aspectFill"></image>
+			<text class="name">{{item.name}}</text>
+		</view>
+	</view>
+
+	<view class="shopList bg-white br12">
+		<view class="sectionTitle flex align-center justify-between">
+			<text>公告</text>
+		</view>
+
+		<view  wx:for="{{news}}" wx:key="index">
+			<text>{{'\r\n'}}</text>
+			<image class="bg" src="{{item.newsBackground}}" mode="aspectFill"></image>
+			<view><text style="font-weight: bold; font-size: medium;">{{item.newsTitle}}</text></view>
+			<view><text>{{'\r\n'}}{{item.newsContent}}</text></view>
+			<view class="location flex align-center justify-between">
+			<view><text class="cuIcon-location"></text>{{'\r\n'}}{{item.newsLocation}}</view></view>
+			<view class="km">{{util.sub(item.commentDatetime)}}</view>
+			<van-divider />
+
+		</view>
+
+	</view>
+
+	<view class="shopList bg-white br12">
+		<view class="sectionTitle flex align-center justify-between">
+			<text>联系我们</text>
+		</view>
+
+		<view  wx:for="{{contacts}}" wx:key="index">
+			<view><text>{{"\r\n"}}联系人：{{item.tontactsName}}</text></view>
+			<view><text>电话： {{item.tontactsPhone}}</text></view>
+			<view><text>场馆地址：{{item.tontactsLocation}}</text></view>
+		</view>
+	</view>
+
+  <view class="tabBar  bg-white">
+    <view class="flex justify-around align-center">
+      <view   class="item select flex flex-direction justify-between align-center">
+        <image class="indexPic" src="/img/tab12.png"  mode="aspectFill"></image>
+        <view>首页</view>
+      </view>
+        <view bindtap="redirect" data-url="/pages/my/my" class="item flex flex-direction justify-between align-center">
+        <image class="myPic" src="/img/tab21.png" mode="aspectFill"></image>
+        <view>我的</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<van-dialog id="van-dialog" />

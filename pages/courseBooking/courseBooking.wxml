@@ -1,0 +1,33 @@
+<!--pages/coachList/coachList.wxml-->
+<van-notify id="van-notify" />
+
+<van-cell-group inset>
+  <van-cell title="请选择请假日期" value="{{ date }}" bind:click="onDisplay" is-link />
+  <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" bind:select="select"/>
+</van-cell-group>
+
+
+<view class="coachListView">
+  <view data-id="{{index}}" wx:for="{{courseList}}" wx:key="index" class="shopItem bg-white flex align-center justify-between">
+    <view class="shopInfo">
+      <view class="name" bindtap="bindCoachClick">{{item.course_name}}</view>
+      <view class="desc flex align-center justify-between">
+        <view>地点：{{item.course_location}}</view>
+        <view>老师：{{item.course_teacher}}</view>
+
+        <van-checkbox checked-color="rgb(224, 132, 90)" data-id="{{index}}" value="{{item.checked}}" bind:change="checkOnChange" icon-size="30px">选择</van-checkbox>
+      </view>
+      <view class="num flex ">
+        <image src="/img/coachList_img3.png" mode="aspectFill" ></image>
+        <text>{{item.name}}项专业认证</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="flex justify-center" bindtap="bookingRightNow">
+			<view class="btn cu-btn">立即请假</view>
+	</view>
+</view>
+
+<!-- 用于显示没有课程可以请假的弹窗信息 -->
+<van-toast id="van-toast" />

@@ -1,0 +1,15 @@
+<view>
+
+  <van-radio-group value="{{ man }}" bind:change="onChange">
+    <van-radio class="radio-class" name="{{true}}" icon-size="32px">男</van-radio>
+    <van-radio class="radio-class" name="{{false}}" icon-size="32px">女</van-radio>
+  </van-radio-group>
+
+<hr/>
+
+  <view class="flex justify-center">
+    <view class="btn cu-btn" bindtap="submitUserName">确定</view>
+  </view>
+
+  
+</view>

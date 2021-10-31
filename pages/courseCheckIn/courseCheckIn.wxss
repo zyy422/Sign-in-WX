@@ -1,0 +1,163 @@
+/* pages/coachList/coachList.wxss */
+page {
+  background-color: #ebd5c8;
+}
+
+.coachListView {
+  padding: 22rpx 32rpx 22rpx 32rpx;
+}
+
+.menuBox {
+  height: 48rpx;
+  padding: 0 22rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ebd5c8;
+  z-index: 99;
+}
+
+.locationBox {
+  position: relative;
+}
+
+.locationBox .label {
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #333333;
+}
+
+.locationBox .cuIcon-unfold {
+  color: #929292;
+  margin-left: 19rpx;
+}
+
+.locationBox picker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.filterBox {
+  color: #E43F3F;
+}
+
+.filterBox .label {
+  margin-right: 9rpx;
+  font-size: 26rpx;
+}
+
+.shopItem {
+  padding: 28rpx 20rpx;
+  border-radius: 16rpx;
+  margin-top: 22rpx;
+}
+
+.shopItem>image {
+  width: 140rpx;
+  height: 147rpx;
+  border-radius: 10rpx;
+  margin-right: 26rpx;
+}
+
+.shopItem .shopInfo {
+  flex: 1;
+}
+
+.shopItem .shopInfo .name {
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: 700;
+}
+
+.shopItem .shopInfo .desc {
+  font-size: 24rpx;
+  color: #BABABA;
+  margin-bottom: 13rpx;
+  margin-top: 6rpx;
+}
+
+.shopItem .shopInfo .desc .cuIcon-right {
+  font-size: 34rpx;
+}
+
+.shopItem .shopInfo .num {
+  color: #fff;
+  font-size: 24rpx;
+  height: 34rpx;
+  border-radius: 17rpx;
+  padding: 0 8rpx;
+  display: inline-block;
+  background-color: #E07865;
+}
+
+.shopItem .shopInfo .num image {
+  width: 27rpx;
+  height: 27rpx;
+  margin-right: 10rpx;
+}
+
+.sectionTitle {
+  padding-left: 45rpx;
+  padding-right: 22rpx;
+  position: relative;
+  font-size: 32rpx;
+  color: #343434;
+  font-weight: 700;
+  border-bottom: 1rpx solid #EEEEEE;
+  line-height: 80rpx;
+}
+
+#sideBar1 .van-sidebar-item--selected .van-sidebar-item__text{
+  background-color: #FFFFFF;
+  color: blue;
+  height: 20 rpx;
+  line-height: 1 rpx;
+}
+
+.tab-class {
+  display: flex;
+}
+
+.tab{
+  margin: 0 0 10px 15px;
+}
+
+.confirm{
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+
+.my-van-button{
+  width: 60 rpx;
+}
+
+.feedBackView .btn {
+  width: calc(100% - 130rpx);
+  height: 88rpx;
+  background: linear-gradient(180deg, #FF6E6E, #FF3736);
+  border-radius: 44rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  position: fixed;
+  font-weight: 500;
+  left: 65rpx;
+  bottom: 100px;
+}
+
+.btn {
+  width: 620rpx;
+  height: 84rpx;
+  background: linear-gradient(180deg, #FF6E6D, #FF3635);
+  border-radius: 42rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #FFF2F2;
+  line-height: 84rpx;
+  margin-top: 50rpx;
+}

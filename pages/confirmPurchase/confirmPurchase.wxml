@@ -1,0 +1,16 @@
+<!--pages/confirmPurchase/confirmPurchase.wxml-->
+<view>
+  <van-card
+  num="2"
+  tag="标签"
+  price="10.00"
+  title="启承篮球基础课程"
+  desc="描述信息"
+  thumb="{{ imageURL }}">
+  <view slot="footer">
+    <van-cell title="上课校区选择" is-link bind:click="showPopup" />
+    <van-popup  show="{{ show }}" round position="bottom" custom-style="height: 20%" bind:close="onClose">衬衣的价格</van-popup>
+  </view>
+  </van-card>
+
+</view>

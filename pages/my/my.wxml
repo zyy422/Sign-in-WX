@@ -1,0 +1,70 @@
+<view class="myView">
+	<view class="topBox">
+		<!-- 用户未登陆显示 -->
+		<view class="userInfo flex align-center" id="userLogin" wx:if="{{!logined}}">
+			<image src="/img/my_img2.png" mode="aspectFill"></image>
+			<button class="login-btn" open-type="getUserProfile" bindtap="getUserInfo" ><text class="name">登陆/注册</text></button>
+		</view>
+		<!-- 用户登陆后展示 -->
+		<view class="userInfo flex align-center" id="userLogin" wx:else>
+			<image src="{{avatarUrl}}" mode="aspectFill"></image>
+			<text class="name">{{nickName}}</text>
+			<text bindtap="navigator" data-url="/pages/personalCenter/personalCenter" class="cuIcon-edit"></text>
+		</view>
+
+		<view class="card ">
+			<image class="bg" src="/img/my_img3.png" mode="widthFix"></image>
+			<view class="cardDesc flex align-center justify-between">
+				<text>购买课程套餐，即可在线约课！</text>
+				<button bindtap="redirect" data-url="/pages/shopList/shopList">立即购买</button>
+			</view>
+		</view>
+	</view>
+
+	<view class="radianBox ">
+		<image class="bg" src="/img/my_img1.png" mode="widthFix"></image>
+		<view  class="shadowBox s1 bg-white flex align-center">
+			<view bindtap="navigator" data-url="/pages/bookingRightNow/bookingRightNow" class="item flex align-center justify-center">
+				<image src="/img/my_img4.png" mode="aspectFill"></image>
+				<view class="name">马上预约</view>
+			</view>
+			<view bindtap="navigator" data-url="/pages/myAppointment/myAppointment" class="item flex align-center justify-center">
+				<image class="w46" src="/img/my_img5.png" mode="aspectFill"></image>
+				<view class="name">签到历史</view>
+			</view>
+		</view>
+	</view>
+
+
+	<view class="shadowBox s2 bg-white  ">
+		<view class="sectionTitle flex align-center justify-between">
+			<text>我的服务</text>
+		</view>
+		<view class="flex align-center">
+			<view bindtap="navigator" data-url="{{item.path}}" wx:for="{{serverList}}" wx:key="index" class="item flex flex-direction align-center justify-between">
+				<image src="{{item.icon}}" mode="widthFix"></image>
+				<text>{{item.name}}</text>
+			</view>
+		</view>
+	</view>
+
+</view>
+
+<!-- 底部tarbar部分 -->
+<view class="tabBar  bg-white">
+	<view class="flex justify-around align-center">
+		<view bindtap="redirect" data-url="/pages/index/index"  class="item flex flex-direction justify-between align-center">
+			<image class="indexPic" src="/img/tab11.png" mode="aspectFill"></image>
+			<view>首页</view>
+		</view>
+		<view class="item select flex flex-direction justify-between align-center">
+			<image class="myPic" src="/img/tab22.png" mode="aspectFill"></image>
+			<view>我的</view>
+		</view>
+	</view>
+</view>
+
+<van-dialog id="van-dialog" />
+
+<!-- 用于点击登录时，显示[登陆中。。。] -->
+<van-toast id="van-toast" />

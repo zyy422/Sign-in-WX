@@ -1,0 +1,23 @@
+<!--pages/cardList/cardList.wxml-->
+<view class="sectionTitle flex align-center justify-between">
+			<text>我的课程</text>
+</view>
+
+<view class="coachListView">
+  <view data-id="{{index}}" wx:for="{{orders}}" wx:key="index" class="shopItem bg-white flex align-center justify-between">
+    <view class="shopInfo">
+      <view class="name" bindtap="bindCoachClick">{{item.course_name}}</view>
+
+      <view class="desc flex align-center justify-between">
+        <view style="flex: 1;">学生姓名： {{item.username}}</view>
+        <view style="flex: 1;">购买时间： {{item.pay_time}}</view>
+      </view>
+
+      <view class="desc flex align-left">
+        <view style="flex: 1;">已购买课时：{{item.total_course}}节</view>
+        <view style="flex: 1;">剩余课时：{{item.remain_course}}节</view>
+      </view>  
+
+    </view>
+  </view>
+</view>

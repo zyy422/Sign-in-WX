@@ -1,0 +1,7 @@
+
+<view class="feedBackView">
+  <form bindsubmit="feedbackSubmit">
+    <textarea placeholder="请输入问题" name="textarea" placeholder-style="color:#C0C0C0"/>
+    <button class="btn cu-btn"  form-type="submit"> 提交 </button>
+  </form>
+</view>

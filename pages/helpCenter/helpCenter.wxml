@@ -1,0 +1,26 @@
+<!--pages/helpCenter/helpCenter.wxml-->
+<view class="helpCenterView">
+	<view class="menuBox bg-white flex justify-around align-center">
+		<view class="item flex flex-direction align-center">
+			<image src="/img/help_img1.png" mode="aspectFill"></image>
+			<text>热线电话：13646842146</text>
+			<text class="time">07:00-21:00</text>
+		</view>
+		<view class="item flex flex-direction align-center">
+			<image src="/img/help_img2.png" mode="aspectFill"></image>
+			<text>在线客服</text>
+			<text class="time">07:00-21:00</text>
+		</view>
+	</view>
+
+	<view class="title">
+		常见问题
+	</view>
+	<view class="qBox">
+		<view class="qItem flex align-center justify-between">
+			<text>运动实时数据不限显示</text>
+			<text class="cuIcon-right"></text>
+		</view>
+	</view>
+
+</view>

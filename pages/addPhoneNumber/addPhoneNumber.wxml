@@ -1,0 +1,8 @@
+
+<van-cell-group class="van-field">
+  <van-field value="{{ value }}" placeholder="请输入您的手机号码" border="{{ false }}" bind:change="onChange"/>
+</van-cell-group>
+
+<view class="flex justify-center">
+  <view class="btn cu-btn" bindtap="submitPhoneNo">确定</view>
+</view>

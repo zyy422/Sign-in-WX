@@ -1,0 +1,26 @@
+<!--pages/shopList/shopList.wxml-->
+<view class="sectionTitle  bg-white flex align-center justify-between">
+	<view class="flex align-center">
+	<text>热销课程</text>
+	</view>
+</view>
+
+<view class="listBox">
+	<view  bindtap="bindShopClick" data-id="{{index}}" wx:for="{{list}}" wx:key="index" class="item bg-white flex">
+		<van-image width="60" height="60" style="margin-left: 10rpx;" src="/img/touxiang.png" round/>
+
+		<view class="flex1">
+			<view class="flex flex1 justify-between align-center">
+				<view class="name">{{item.courseName}}</view>
+				<view class="km">
+					<image mode="aspectFill" src="/img/price.png"></image>
+					<text class="price" >{{item.coursePrice}}</text>
+				</view>
+			</view>
+
+			<view class="address">地址：{{item.courseLocation}}</view>
+
+			<view class="address">授课人：{{item.courseTeacher}}</view>
+		</view>
+	</view>
+</view>

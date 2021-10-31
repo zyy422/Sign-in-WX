@@ -1,0 +1,32 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<van-cell-group inset style="margin-top: 30rpx;">
+	<van-cell title="用户编号" value="{{userId}}"  />
+	<van-cell title="微信昵称" value="{{nickName}}"  />
+	<van-cell title="性别" is-link value="{{sex}}" link-type="navigateTo" url="/pages/modifyGender/modifyGender"/>
+	<van-cell title="学生姓名" is-link value="{{studentName}}" link-type="navigateTo" url="/pages/addStudentName/addStudentName"/>
+	<van-cell title="手机号码" is-link value="{{phoneNumber}}" link-type="navigateTo"  url="/pages/addPhoneNumber/addPhoneNumber" />
+	<van-cell title="出生年月" is-link bind:click="showPopup" value="{{birthday}}" />
+	<van-popup position="bottom" show="{{ show }}" bind:close="onClose">
+		<view class="container">
+			<view class="page-body">
+				<view style="display: flex; align-items: center;">
+					<view class="selected-date">{{year}}年{{month}}月{{day}}日</view>
+					<button class="btn-style" type="warn" plain="true" size="mini" plain="{{false}}" bindtap="confirm">确定</button>
+				</view>
+
+				<picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+					<picker-view-column>
+						<view wx:for="{{years}}" wx:key="index" style="line-height: 50px; text-align: center;">{{item}}年</view>
+					</picker-view-column>
+					<picker-view-column>
+						<view wx:for="{{months}}" wx:key="index" style="line-height: 50px; text-align: center;">{{item}}月</view>
+					</picker-view-column>
+					<picker-view-column>
+						<view wx:for="{{days}}" wx:key="index" style="line-height: 50px; text-align: center; ">{{item}}日</view>
+					</picker-view-column>
+				</picker-view>
+			</view>
+		</view>
+	</van-popup>
+
+</van-cell-group>

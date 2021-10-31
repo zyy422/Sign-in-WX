@@ -1,0 +1,4 @@
+/* pages/joinUs/joinUs.wxss */
+.joinUsView image{
+  width: 100%;
+}

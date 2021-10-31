@@ -1,0 +1,4 @@
+<!--pages/joinUs/joinUs.wxml-->
+<view class="joinUsView">
+  <image src="{{joinUsImg}}" mode="widthFix"></image>
+</view>

@@ -1,0 +1,271 @@
+/**index.wxss**/
+page {
+  background-color: #ebd5c8;
+}
+
+.indexView {
+  padding: 0 22rpx;
+  padding-top: 6vh;
+  padding-bottom: 192rpx;
+}
+
+.locationBox .label {
+  font-size: 30rpx;
+  color: #565656;
+  margin-bottom: 17rpx;
+}
+
+.locationBox .cuIcon-location {
+  margin-right: 20rpx;
+  font-size: 34rpx;
+}
+
+.locationBox .cityName {
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #343434;
+}
+
+.locationBox .cuIcon-unfold {
+  margin-left: 9rpx;
+  color: #333333;
+  font-size: 24rpx;
+  margin-top: 6rpx;
+}
+
+.AD {
+  width: 100%;
+  height: 260rpx;
+  margin-top: 38rpx;
+}
+
+.AD image {
+  width: 100%;
+  height: 100%;
+}
+
+.menuBox {
+  padding: 37rpx 22rpx 40rpx 22rpx;
+}
+
+.menuBox .item {
+  color: #343434;
+  font-size: 26rpx;
+}
+
+.menuBox .item image {
+  width: 90rpx;
+  height: 90rpx;
+  margin-bottom: 20rpx;
+}
+
+.sectionTitle {
+  padding-left: 45rpx;
+  padding-right: 22rpx;
+  position: relative;
+  font-size: 32rpx;
+  color: #343434;
+  font-weight: 700;
+  border-bottom: 1rpx solid #EEEEEE;
+  line-height: 80rpx;
+}
+
+.sectionTitle::after {
+  position: absolute;
+  left: 22rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8rpx;
+  height: 28rpx;
+  content: '';
+  background: linear-gradient(180deg, #FF6E6E, #FF3736);
+  border-radius: 4rpx;
+}
+
+.sectionTitle .btn {
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border: 1rpx solid #C6C6C6;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  color: #9A9A9A;
+}
+
+.dataBox .item {
+  width: 210rpx;
+  border-radius: 8rpx;
+  padding: 28rpx 20rpx 23rpx 20rpx;
+  margin: 22rpx 0 29rpx 0;
+}
+
+.dataBox .item:nth-child(1) {
+  background: linear-gradient(0deg, rgba(225, 136, 90, .27) 0%, rgba(250, 221, 220, .27) 100%);
+}
+
+.dataBox .item:nth-child(2) {
+  background: linear-gradient(0deg, rgba(229, 44, 34, .27) 0%, rgba(250, 221, 220, .27) 100%);
+}
+
+.dataBox .item:nth-child(3) {
+  background: linear-gradient(0deg, rgba(42, 192, 74, .27) 0%, rgba(250, 221, 220, .27) 100%);
+}
+
+.dataBox .item:nth-child(1) .data {
+  color: #B86616;
+}
+
+.dataBox .item:nth-child(2) .data {
+  color: #BA1D15;
+}
+
+.dataBox .item:nth-child(3) .data {
+  color: #179231;
+}
+
+.dataBox .item:nth-child(1) .desc {
+  color: #F3A86E;
+}
+
+.dataBox .item:nth-child(2) .desc {
+  color: #EA5646;
+}
+
+.dataBox .item:nth-child(3) .desc {
+  color: #48CA62;
+}
+
+.dataBox .item image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.dataBox .item .data {
+  font-size: 22rpx;
+}
+
+.dataBox .item .data .big {
+  font-size: 42rpx;
+}
+
+.dataBox .item .desc {
+  margin-top: 22rpx;
+  font-size: 28rpx;
+}
+
+.shopList {
+  margin-top: 25rpx;
+  padding: 10rpx 22rpx 32rpx 22rpx;
+}
+
+.shopList .item {
+  position: relative;
+  width: 100%;
+  height: 254rpx;
+  margin-top: 22rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.shopList .item .bg {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.shopList .item .content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 20rpx;
+  padding-bottom: 14rpx;
+  padding-right: 34rpx;
+  font-size: 24rpx;
+}
+
+.shopList .item .content .name {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-bottom: 17rpx;
+}
+
+.shopList .item .content .location .km {
+  font-weight: 600;
+}
+
+.hotTopic {
+  margin-top: 25rpx;
+  padding-bottom: 37rpx;
+}
+
+.hotTopic .sv {
+  height: 254rpx;
+  padding:0 23rpx;
+  margin-top: 36rpx;
+  white-space: nowrap;
+}
+.hotTopic .sv .item{
+  width: 444rpx;
+  height: 100%;
+  border-radius: 12rpx;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin-right: 18rpx;
+}
+.hotTopic .sv .item image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hotTopic .sv .item .title{
+  font-size: 32rpx;
+  position: absolute;
+  left: 20rpx;
+  bottom: 53rpx;
+}
+
+.tabBar{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+box-shadow: 1px 3px 13px 0px rgba(216, 77, 72, 0.39);
+}
+.tabBar .item{
+  height: 100rpx;
+  padding-top: 10rpx;
+  padding-bottom: 13rpx;
+  font-size: 24rpx;
+  color: #999; 
+}
+.tabBar .item.select {
+  color: #FF403E;
+}
+.tabBar .item.select{
+  color: #FF403E;
+}
+.tabBar .item .indexPic{
+  width: 33rpx; 
+  height: 41rpx;
+}
+.tabBar .item .myPic{
+  width: 33rpx; 
+  height: 32rpx;
+}
+
+.tabBar .tab3{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -50rpx;
+  transform: translateX(-50%);
+}

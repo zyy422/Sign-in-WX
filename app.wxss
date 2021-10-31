@@ -1,0 +1,15 @@
+/**app.wxss**/
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+
+page {
+
+  font-family: PingFang SC;
+  background-color: pink;
+}
+.br12 { 
+  border-radius: 12px;
+}
+.px22{
+  padding: 0 22rpx;
+}

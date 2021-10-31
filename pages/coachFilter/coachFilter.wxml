@@ -1,0 +1,15 @@
+<!--pages/coachFilter/coachFilter.wxml-->
+<view class="coachFilterView">
+  <view wx:for="{{coachFilterList}}" wx:key="index" class="section">
+    <view class="label">{{item.label}}</view>
+    <view class="tagBox flex flex-wrap">
+      <view wx:for="{{item.list}}" wx:key="index" class="item  text-center">{{item.name}}</view>
+    </view>
+  </view>
+
+  <view class="btnBox flex justify-between">
+    <button class="cu-btn btn rest bg-white">重置</button>
+    <button class="cu-btn btn save">确定</button>
+  </view>
+
+</view>

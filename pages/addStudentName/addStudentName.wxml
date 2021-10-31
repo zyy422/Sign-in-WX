@@ -1,0 +1,12 @@
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入学生姓名"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<view class="flex justify-center">
+  <view class="btn cu-btn" bindtap="submitUserName">确定</view>
+</view>
